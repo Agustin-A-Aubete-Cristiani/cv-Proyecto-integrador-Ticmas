@@ -1,0 +1,62 @@
+.navigationBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: opacity .2s linear;
+  background-color: #fffa;
+}
+
+.upBtn {
+  opacity: 0;
+  right: 10px;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.upBtn__iconSVG {
+  /* display: block; */
+  width: 70%;
+}
+.nextBtn,
+.homeBtn {
+  right: 10px;
+  top: 40vh;
+}
+.homeBtn {
+  width: 50px;
+  height: 50px;
+  border-radius: 20%;
+  display: none;
+}
+.prevBtn {
+  left: 10px;
+  top: 40vh;
+  transform: rotate(-90deg)
+}
+.nextBtn {
+  transform: rotate(90deg)
+}
+
+.btnUnavailable {
+  display: none;
+}
+.btnAvailable {
+  display: flex;
+}
+.upBtnAvailable {
+  opacity: 1;
+}
+.content {
+  display: none;
+}
+.content > * {
+  margin-bottom: 15px;
+}
+.contentAvailable {
+  display: block;
+}

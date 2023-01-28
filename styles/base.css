@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+:root {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.debug {
+  outline: 3px solid red;
+}
+
+* {
+  box-sizing: border-box;
+  font-size: 1rem;
+  background-color: #fff;
+}
+
+body {
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.infoCvContainer {
+  display: grid;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 25px;
+}
+.subContent {
+  display: flex;
+}
+.subContent__profileInfo {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #ddd;
+}
+.subContent__imgAndNameProfile,
+.subContent__infoProfileContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.subContent__imgAndNameProfile {
+  font-size: 1rem;
+}
+.subContent__infoProfileContainer {
+  width: 50%;
+  height: 80%;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: space-between;
+}
+.subContent__subTitle {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #444;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.subContent__profileImg {
+  border: 2px solid #222;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  width: 80%;
+}
+
+.subContent__socialMedia {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.subContent__socialMedia > li {
+  display: inline-block;
+  width: fit-content;
+}
+.subContent__infoList {
+  padding: 10px;
+}
+.subContent__subTitle {
+  margin-bottom: 20px;
+  padding: 10px;
+  text-align: center;
+}
+.subContent__infoList > hr {
+  width: 80%;
+  margin: 30px auto;
+}
+.subContent__infoSubList {
+  margin-bottom: 10px;
+}
+.subContent__infoSubList > li {
+  margin-left: 10px;
+}
+.subContent__contactInfo > li {
+  text-align: start;
+}
+.mainContent__subTitle {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-decoration-line: underline;
+  text-align: center;
+}
+.mainContent .content{
+  padding: 10px;
+}

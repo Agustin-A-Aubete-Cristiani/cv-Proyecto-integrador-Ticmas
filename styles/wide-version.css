@@ -1,0 +1,49 @@
+@media (min-width: 800px) {
+  .subContent {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: calc(40vw - 10px);
+    }
+    .subContent__infoList{
+      height: 80vh;
+      overflow-y: scroll;
+    }
+  .mainContent {
+    display: block;
+    width: calc(60vw - 10px);
+    margin-left: auto;
+  }
+  .mainContent .content {
+    display: block;
+  }
+  .mainContent .content::after {
+    content: "";
+    width: 80%;
+    display: block;
+    height: 2px;
+    background-color: #888;
+    margin: 20px auto;
+  }
+  .mainContent .content:last-child::after {
+    content: "";
+    width: 80%;
+    display: none;
+    height: 2px;
+    background-color: #888;
+    margin: 20px auto;
+  }
+  .content {
+    line-height: 1.5rem;
+  }
+  button.navigationBtn {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  :root {
+    font-size: 28px;
+  }
+
+}
